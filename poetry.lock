@@ -1042,41 +1042,6 @@ packaging = ">=22.0"
 setuptools = ">=42.0.0"
 
 [[package]]
-name = "pymupdf"
-version = "1.24.13"
-description = "A high performance Python library for data extraction, analysis, conversion & manipulation of PDF (and other) documents."
-optional = false
-python-versions = ">=3.9"
-files = [
-    {file = "PyMuPDF-1.24.13-cp39-abi3-macosx_10_9_x86_64.whl", hash = "sha256:c11bb9198af69d490b4b346421db827d875a28fbc760d239e691d4b3ed12b5ad"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:240d5c43daa9278db50d609162b48f673ab256d7e5c73eea67af517c1fc2d47c"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:e4c8808e62afbbde0f7b9c4151c4b1a5735911c2d39c34332860df600dba76f8"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:c830610e4fde237fcf0532f1f8c1381453f48c164a5eadd0c6e5fd0bea1ca8e3"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:4520558580ac6b5a7164fda29fbc14e39d3114fd803420721500edbf47d04872"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-win32.whl", hash = "sha256:ab22828d4fc205791ef1332a64893cbfc38cd9c331c5f46ae4537372ffee6fc1"},
-    {file = "PyMuPDF-1.24.13-cp39-abi3-win_amd64.whl", hash = "sha256:ec17914e4a560f4070212a2e84db5cc8b561d85d1ead193605a22f9561b03148"},
-    {file = "PyMuPDF-1.24.13.tar.gz", hash = "sha256:6ec3ab3c6d5cba60bfcf58daaa2d1a5b700b0366ce52be666445007351461fa4"},
-]
-
-[[package]]
-name = "pypdf2"
-version = "3.0.1"
-description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "PyPDF2-3.0.1.tar.gz", hash = "sha256:a74408f69ba6271f71b9352ef4ed03dc53a31aa404d29b5d31f53bfecfee1440"},
-    {file = "pypdf2-3.0.1-py3-none-any.whl", hash = "sha256:d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928"},
-]
-
-[package.extras]
-crypto = ["PyCryptodome"]
-dev = ["black", "flit", "pip-tools", "pre-commit (<2.18.0)", "pytest-cov", "wheel"]
-docs = ["myst_parser", "sphinx", "sphinx_rtd_theme"]
-full = ["Pillow", "PyCryptodome"]
-image = ["Pillow"]
-
-[[package]]
 name = "pypdfium2"
 version = "4.30.0"
 description = "Python bindings to PDFium"
@@ -1097,21 +1062,6 @@ files = [
     {file = "pypdfium2-4.30.0-py3-none-win_arm64.whl", hash = "sha256:119b2969a6d6b1e8d55e99caaf05290294f2d0fe49c12a3f17102d01c441bd29"},
     {file = "pypdfium2-4.30.0.tar.gz", hash = "sha256:48b5b7e5566665bc1015b9d69c1ebabe21f6aee468b509531c3c8318eeee2e16"},
 ]
-
-[[package]]
-name = "pytesseract"
-version = "0.3.13"
-description = "Python-tesseract is a python wrapper for Google's Tesseract-OCR"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "pytesseract-0.3.13-py3-none-any.whl", hash = "sha256:7a99c6c2ac598360693d83a416e36e0b33a67638bb9d77fdcac094a3589d4b34"},
-    {file = "pytesseract-0.3.13.tar.gz", hash = "sha256:4bf5f880c99406f52a3cfc2633e42d9dc67615e69d8a509d74867d3baddb5db9"},
-]
-
-[package.dependencies]
-packaging = ">=21.3"
-Pillow = ">=8.0.0"
 
 [[package]]
 name = "python-dateutil"
@@ -1348,20 +1298,6 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
-name = "tabulate"
-version = "0.9.0"
-description = "Pretty-print tabular data"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"},
-    {file = "tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"},
-]
-
-[package.extras]
-widechars = ["wcwidth"]
-
-[[package]]
 name = "tornado"
 version = "6.4.1"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
@@ -1452,4 +1388,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.14"
-content-hash = "e6c88d8966dedb8fcc1b2cd09700a5feeedf45d27a6e45a3a050fe52782f045c"
+content-hash = "3e4fbb5f61daab7323cd86c0c23536184a54e22c7cf829402511501a6a0e7bb2"
